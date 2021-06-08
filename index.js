@@ -17,7 +17,13 @@ Do the following:
 
    HINT: no function required
 */
+let votingAge = 18;
 
+if(votingAge > 17){
+  console.log(true);
+}else{
+  console.log(false);
+}
 
 
 /*
@@ -30,8 +36,12 @@ Do the following:
 
    HINT: no function required
 */
+let b1 = 1;
+let b2 = 4;
 
-
+if(b1 < b2){
+  console.log(b1 + b2);
+}
 
 
 
@@ -45,9 +55,10 @@ Do the following:
 
    HINT: look up the Number method
 */
+let c1 = "1999";
 
-
-
+Number("1999");
+console.log(c1);
 
 /*
 Task 1d - Multiply
@@ -58,8 +69,8 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a, b){
+    return a * b;
   }
 
 
@@ -74,10 +85,12 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age){
+    if(age > 0){
+      return age * 7;
+    }
 }
-
+console.log(dogYears(5))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -152,7 +165,7 @@ Use the game function below to do the following:
 */
 
 function game(user, computer){
-    /*add your code here*/
+    
 }
   
   
@@ -168,11 +181,11 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
+function miles(km,){
+    return km * 0.621371;
   }
 
-
+console.log(miles(5))
 
 //Task 5b - Feet to CM
 /*
@@ -182,11 +195,11 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(cm){
+    return cm / 30.48;
   }
  
-
+console.log(feet(111));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -198,10 +211,10 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(number){
+  return number + ' bottles of soda on the wall, ' + number +' bottles of soda, take one down pass it around ' +(number-1) +' bottles of soda on the wall';
   }
-
+  console.log(annoyingSong(99));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -218,11 +231,21 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(/*Your Code here */){
-  /*Your Code here */
+function grade(score){
+    if(score > 89){
+      return 'you got an A';
+    }else if(score < 90 && score > 79){
+      return 'you got an B';
+    }else if(score < 80 && score > 69){
+      return 'you got an C';
+    }else if(score < 70 && score > 59){
+      return 'you got an D';
+    }else{
+      return 'you got an F';
+    }
   }
   
-  
+  console.log(grade(66));
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
