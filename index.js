@@ -173,28 +173,28 @@ let computersC = Math.random();
       computer = 'scissors';
     }
 function game(user, computer){
-    if(user = 'rock' && computer = 'rock'){
+    if(user === 'rock' && computer === 'rock'){
         return "it's a tie"
-      }else if( user = 'rock' && computer = 'paper'){
+      }else if( user === 'rock' && computer === 'paper'){
         return "you win!"
-      }else if( user = 'rock' && computer = 'scissors'){
+      }else if( user === 'rock' && computer === 'scissors'){
         return "you lose!"
-      }else if( user = 'paper' && computer = 'rock'){
+      }else if( user === 'paper' && computer === 'rock'){
         return "you win!"
-      }else if( user = 'paper' && computer = 'paper'){
+      }else if( user === 'paper' && computer === 'paper'){
         return "it's a tie!"
-      }else if( user = 'paper' && computer = 'scissors'){
+      }else if( user === 'paper' && computer === 'scissors'){
         return "you lose!"
-      }else if( user = 'scissors' && computer = 'rock'){
+      }else if( user === 'scissors' && computer === 'rock'){
         return "you lose!"
-      }else if( user = 'scissors' && computer = 'paper'){
+      }else if( user === 'scissors' && computer === 'paper'){
         return "you win!"
-      }else if( user = 'scissors' && computer = 'scissors'){
+      }else if( user === 'scissors' && computer === 'scissors'){
         return "it's a tie"
       }
 }
   
-  console.log(game(user, computer));
+  console.log(game('rock', computer));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
